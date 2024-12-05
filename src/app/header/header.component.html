@@ -1,0 +1,21 @@
+
+<div class="page-breadcrumb">
+    <div class="row">
+      <div class="date">{{ currentDate  | date  }}</div>
+    </div>
+  </div>
+  <div class="ezd-search-banner">
+  </div>
+  <form class="ezd-search-form" (submit)="onSearch()">
+    <div class="form-group">
+      <div class="input-wrapper">
+        <label>Search:</label>
+        <input type="text" [(ngModel)]="searchQuery" />
+      </div>
+    </div>
+    <button type="submit">Search</button>
+  </form>
+  <div id="ezd-search-results">
+  </div>
+  <p>blablaaa</p>
+  
